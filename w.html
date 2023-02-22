@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Insert data</title>
+    <link rel="stylesheet" href="w.css">
+</head>
+<body>
+<div>
+    <p style="text-align:center;" >Insert data</p>
+    <label for="">Name</label>
+    <p><input type="text" placeholder="" onfocus="FocusBox(this)" onblur="BlurBox(this)"></p>
+    
+    
+    <label for="">Surname</label>
+    <p><input type="text" placeholder="" onfocus="FocusBox(this)" onblur="BlurBox(this)"></p>
+    
+    
+    
+    <label for="">Gender</label>
+    <p>
+        <select name="" id="menu" onchange="SelectMenu()">
+        <option value="Female">Female</option>
+        <option value="Male">Male</option>
+        <option value="Complicate">Complicate</option>
+        
+        
+        </select>
+    </p>
+    
+    
+    
+    <label for="">Birth Data</label>
+    <p><input type="text" placeholder="" onfocus="FocusBox(this)" onblur="BlurBox(this)"></p>
+    
+
+    <button onclick="AddItem()">Add</button> 
+</div>
+
+    
+        
+    
+   
+    
+    
+    <script src="w.js"></script>
+</body>
+<body onload="LoadData()">
+    <table id="table">
+        <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Gender</th>
+            <th>Birth Data</th>
+        </tr>
+    </table>
+
+
+
+
+
+</body>
+</html>
